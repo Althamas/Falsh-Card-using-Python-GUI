@@ -11,10 +11,10 @@ try:
 except FileNotFoundError:
     data = pandas.read_csv("data/french_words.csv")
     data_dict = data.to_dict(orient="records")
-    print(data_dict)
+#     print(data_dict)
 else:
     data_dict = data.to_dict(orient="records")
-    print(data_dict)
+#     print(data_dict)
 
 current_dict = {}
 
